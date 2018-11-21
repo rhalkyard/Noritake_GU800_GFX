@@ -134,6 +134,18 @@ methods are exposed:
 The full command set is available as public methods, but should be used with
 care since they could put the display into a state not expected by the library.
 
+## Action Shots
+
+![Front View](resources/front.jpg)
+Front view of board; connected to an Arduino.
+
+![Rear View](resources/rear.jpg)
+Back of board. Note that J2 (near the black connector) is bridged, to configure SPI mode.
+
+![In Action](resources/text.jpg)
+
+![In Action](resources/graphics.jpg)
+
 ## To Do
 
 * Support for software SPI
