@@ -82,6 +82,10 @@ deasserted after every byte transferred.
 asserted at least 150ns after the last clock pulse. C/D is sampled on the last
 clock pulse and must be held until C/D is deasserted.
 
+Note that I experienced instability at higher SPI speeds with the display
+connected via a breadboard. Connect the display directly for best results, or
+reduce the SPI clock rate in `GU800_GFX.h`.
+
 ### Buffer format
 
 Data is written to the GU800 as bytes, with each byte representing a column of

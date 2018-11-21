@@ -64,6 +64,9 @@ class GU800 : public Adafruit_GFX {
     const int csPin, dcPin, resetPin;
     volatile uint8_t *csport, *dcport;
     uint8_t cspinmask, dcpinmask;
+
+    /* 5MHz is the maximum speed supported by this display. May need to decrease
+    this if connected via breadboard due to signal integrity issues. */
     const SPISettings spi = SPISettings(5000000, MSBFIRST, SPI_MODE3);
 
     uint8_t buffer[GU800_HEIGHTBYTES][GU800_WIDTH];
